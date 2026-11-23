@@ -7,8 +7,18 @@ AOS.init({
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (!targetId || targetId === '#') {
+            return;
+        }
+
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const target = document.querySelector(targetId);
+        if (!target) {
+            return;
+        }
+
+        target.scrollIntoView({
             behavior: 'smooth'
         });
     });
@@ -48,11 +58,6 @@ darkModeToggle.addEventListener('click', () => {
         '<i class="fas fa-moon"></i>';
 });
 
-// Add navigation link for Skills section
-document.querySelector('a[href="#about"]').parentElement.insertAdjacentHTML('afterend',
-    '<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>'
-);
-
 // Form validation and submission
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
@@ -67,15 +72,11 @@ if (contactForm) {
                 message: document.getElementById('message').value
             };
 
-            // Here you would typically send the form data to your server
-            // For now, we'll just log it to the console
-            console.log('Form submitted:', formData);
-
-            // Show success message
-            alert('Thank you for your message! I will get back to you soon.');
-
-            // Reset form
-            this.reset();
+            const subject = encodeURIComponent(`Portfolio enquiry from ${formData.name}`);
+            const body = encodeURIComponent(
+                `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+            );
+            window.location.href = `mailto:fizurrahman733433@gmail.com?subject=${subject}&body=${body}`;
         }
 
         this.classList.add('was-validated');
