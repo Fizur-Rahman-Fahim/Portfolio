@@ -4,17 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Portfolio of Md. Fizur Rahman Fahim, a backend-focused full-stack developer building practical web systems with Django, React and REST APIs.">
+    <title>Md. Fizur Rahman Fahim | Backend-Focused Full-Stack Developer (Django, Python, React)</title>
+    <meta name="description" content="Backend-focused full-stack developer building Django REST APIs, React and React Native apps, IoT solutions, and scalable software for real-world problems.">
     <meta name="author" content="Md. Fizur Rahman Fahim">
-    <title>Md. Fizur Rahman Fahim | Full-Stack Developer</title>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fizur-rahman-fahim.github.io/Portfolio/">
+
+    <meta property="og:title" content="Md. Fizur Rahman Fahim | Backend-Focused Full-Stack Developer">
+    <meta property="og:description" content="Backend-focused full-stack developer specializing in Django REST APIs, React, React Native, IoT, and practical software solutions.">
+    <meta property="og:url" content="https://fizur-rahman-fahim.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://fizur-rahman-fahim.github.io/Portfolio/assets/profile/IMG20240512083233.jpg">
+    <meta property="og:image:alt" content="Md. Fizur Rahman Fahim, backend-focused full-stack developer">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Md. Fizur Rahman Fahim | Backend-Focused Full-Stack Developer">
+    <meta name="twitter:description" content="Django, Python, React, REST APIs and IoT solutions by backend-focused full-stack developer Md. Fizur Rahman Fahim.">
+    <meta name="twitter:url" content="https://fizur-rahman-fahim.github.io/Portfolio/">
+    <meta name="twitter:image" content="https://fizur-rahman-fahim.github.io/Portfolio/assets/profile/IMG20240512083233.jpg">
+    <meta name="twitter:image:alt" content="Md. Fizur Rahman Fahim, backend-focused full-stack developer">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Md. Fizur Rahman Fahim",
+      "url": "https://fizur-rahman-fahim.github.io/Portfolio/",
+      "image": "https://fizur-rahman-fahim.github.io/Portfolio/assets/profile/IMG20240512083233.jpg",
+      "jobTitle": "Backend-Focused Full-Stack Developer",
+      "email": "mailto:fizurrahman733433@gmail.com",
+      "sameAs": [
+        "https://github.com/Fizur-Rahman-Fahim",
+        "https://www.instagram.com/fizurrahmanfahim"
+      ],
+      "knowsAbout": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "React",
+        "React Native",
+        "PostgreSQL",
+        "REST APIs",
+        "IoT",
+        "Machine Learning"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
     <!--  Favicon  -->
-    <link rel="icon" type="image/x-icon" href="assets\profile\favocon_image.png">
+    <link rel="icon" type="image/png" href="assets/profile/favocon_image.png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +74,11 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm" aria-label="Primary navigation">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">FRF</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#home" aria-label="Md. Fizur Rahman Fahim portfolio home">FRF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -63,34 +110,36 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://github.com/Fizur-Rahman-Fahim" target="_blank"
-                            rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square fa-xs"></i></a>
+                            rel="noopener noreferrer" aria-label="Visit Md. Fizur Rahman Fahim's GitHub profile">GitHub <i class="fas fa-arrow-up-right-from-square fa-xs"></i></a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn nav-link" id="darkModeToggle">
+                        <button class="btn nav-link" id="darkModeToggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav>
+        </nav>
+    </header>
 
+    <main>
     <!-- Hero Section -->
     <section id="home" class="hero min-vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center ">
                 <div class="col-lg-6" data-aos="fade-right">
                     <p class="eyebrow mb-3">BACKEND-FOCUSED FULL-STACK DEVELOPER</p>
-                    <h1 class="display-4 fw-bold mb-3">Building useful software for real-world problems.</h1>
-                    <h2 class="h3 mb-4">Md. Fizur Rahman Fahim</h2>
+                    <h1 class="display-4 fw-bold mb-3">Md. Fizur Rahman Fahim</h1>
+                    <h2 class="h3 mb-4">Backend-Focused Full-Stack Developer</h2>
                     <p class="lead mb-4">I design and build reliable web applications, REST APIs and automation tools
                         with Django, React, Python and modern databases.</p>
                     <div class="d-flex gap-3 mb-4 m">
                         <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="assets\pdf\Fahim_CV_Latest.pdf" class="btn btn-outline-primary" download>Download Resume</a>
+                        <a href="assets/pdf/Fahim_CV_Latest.pdf" class="btn btn-outline-primary" download aria-label="Download Md. Fizur Rahman Fahim's latest resume">Download Resume</a>
                     </div>
                     <div class="hero-links">
-                        <a href="https://github.com/Fizur-Rahman-Fahim" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Fizur-Rahman-Fahim" target="_blank" rel="noopener noreferrer" aria-label="Visit Md. Fizur Rahman Fahim on GitHub">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         <a href="mailto:fizurrahman733433@gmail.com">
@@ -100,8 +149,8 @@
                 </div>
                 <div class="col-lg-6 m" data-aos="fade-left">
                     <!-- Add your professional image here -->
-                    <img src="assets\profile\IMG20240512083233.jpg" alt="Md. Fizur Rahman Fahim"
-                        class="img-fluid about-img">
+                    <img src="assets/profile/IMG20240512083233.jpg" alt="Md. Fizur Rahman Fahim, backend-focused full-stack Python and Django developer"
+                        class="img-fluid about-img" width="3468" height="4624" fetchpriority="high" loading="eager" decoding="async">
                 </div>
             </div>
         </div>
@@ -218,7 +267,7 @@
                                     <h3 class="lead mb-3">Resume</h3>
                                     <p class="lead mb-4">A concise overview of my professional background and key
                                         achievements.</p>
-                                    <a href="assets\pdf\Fahim_CV_Latest.pdf" class="btn btn-primary" download>
+                                    <a href="assets/pdf/Fahim_CV_Latest.pdf" class="btn btn-primary" download aria-label="Download Md. Fizur Rahman Fahim's resume PDF">
                                         <i class="fas fa-download me-2"></i>Download Resume
                                     </a>
                                 </div>
@@ -232,7 +281,7 @@
                                     <p class="lead mb-4">A detailed document with comprehensive information about my
                                         career.
                                     </p>
-                                    <a href="assets\pdf\CV.pdf" class="btn btn-primary" download>
+                                    <a href="assets/pdf/CV.pdf" class="btn btn-primary" download aria-label="Download Md. Fizur Rahman Fahim's curriculum vitae PDF">
                                         <i class="fas fa-download me-2"></i>Download CV
                                     </a>
                                 </div>
@@ -255,159 +304,159 @@
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-4" data-aos="fade-up">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <img src="assets/Projects/mess-manager/docs/screenshots/02-dashboard.jpeg"
-                            class="project-preview" alt="Mess Manager dashboard">
+                            class="project-preview" alt="Mess Manager Django REST and React Native dashboard for meal tracking and monthly billing" loading="lazy" decoding="async">
                         <div class="card-body">
                             <span class="project-type">FULL-STACK PLATFORM</span>
-                            <h5 class="card-title">Mess Manager</h5>
+                            <h3 class="card-title h5">Mess Manager</h3>
                             <p class="card-text">A mobile-first shared-kitchen platform with meal tracking, approved
                                 deposits, bazar expenses, complaints and automated monthly billing.</p>
                             <p class="tech-stack">Django REST • React Native • Expo • Supabase • JWT</p>
                             <div class="d-flex gap-2">
                                 <a href="https://mess-manager-api-bio8.onrender.com/" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Live demo <i
+                                    rel="noopener noreferrer" aria-label="Open the Mess Manager live demo" class="btn btn-outline-primary btn-sm">Live demo <i
                                         class="fas fa-arrow-up-right-from-square ms-1"></i></a>
                                 <a href="https://github.com/Fizur-Rahman-Fahim/mess-manager" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">GitHub
+                                    rel="noopener noreferrer" aria-label="View the Mess Manager GitHub repository" class="btn btn-outline-primary btn-sm">GitHub
                                     <i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <img src="assets/Projects/smart_attendance/docx/image/WhatsApp Image 2026-11-21 at 10.53.23 AM.jpeg"
-                            class="project-preview" alt="Smart Attendance hardware prototype">
+                            class="project-preview" alt="Smart Attendance IoT hardware prototype with ESP32-CAM and RFID identification" loading="lazy" decoding="async">
                         <div class="card-body">
                             <span class="project-type">IOT + COMPUTER VISION</span>
-                            <h5 class="card-title">Smart Attendance</h5>
+                            <h3 class="card-title h5">Smart Attendance</h3>
                             <p class="card-text">An IoT attendance workflow combining RFID identification, ESP32-CAM
                                 face verification, duplicate prevention and Django reporting.</p>
                             <p class="tech-stack">ESP32 • RFID • Face Recognition • Django REST • Supabase</p>
                             <div class="d-flex gap-2">
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Smart-Attendance" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">View project <i
+                                    rel="noopener noreferrer" aria-label="View the Smart Attendance GitHub project" class="btn btn-outline-primary btn-sm">View project <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <img src="assets/Projects/LMS/Documents/Screenshorts/Dashboard.png"
-                            class="project-preview" alt="Learning Management System dashboard">
+                            class="project-preview" alt="Learning Management System React and Django dashboard for courses, enrollment, and analytics" loading="lazy" decoding="async">
                         <div class="card-body">
                             <span class="project-type">EDTECH APPLICATION</span>
-                            <h5 class="card-title">Learning Management System</h5>
+                            <h3 class="card-title h5">Learning Management System</h3>
                             <p class="card-text">A role-based education platform for course publishing, student
                                 enrollment, progress tracking and instructor analytics.</p>
                             <p class="tech-stack">React • Django REST • JWT • Tailwind CSS • SQLite/PostgreSQL</p>
                             <div class="d-flex gap-2">
                                 <a href="https://github.com/Fizur-Rahman-Fahim/LMS" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">View project <i
+                                    rel="noopener noreferrer" aria-label="View the Learning Management System GitHub project" class="btn btn-outline-primary btn-sm">View project <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <img src="assets/Projects/doctor_desk/images/Dashboard.png"
-                            class="project-preview" alt="Doctor Desk application dashboard">
+                            class="project-preview" alt="Doctor Desk Django healthcare dashboard for patient records and prescriptions" loading="lazy" decoding="async">
                         <div class="card-body">
                             <span class="project-type">HEALTHCARE SYSTEM</span>
-                            <h5 class="card-title">Doctor Desk</h5>
+                            <h3 class="card-title h5">Doctor Desk</h3>
                             <p class="card-text">A medical records workspace for patient profiles, prescriptions,
                                 visit history and secure report management.</p>
                             <p class="tech-stack">Django • PostgreSQL • Bootstrap • Render • Supabase</p>
                             <div class="d-flex gap-2">
                                 <a href="https://doctor-desk-okum.onrender.com" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Live demo <i
+                                    rel="noopener noreferrer" aria-label="Open the Doctor Desk live demo" class="btn btn-outline-primary btn-sm">Live demo <i
                                         class="fas fa-arrow-up-right-from-square ms-1"></i></a>
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Doctor-Desk" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">GitHub</a>
+                                    rel="noopener noreferrer" aria-label="View the Doctor Desk GitHub repository" class="btn btn-outline-primary btn-sm">GitHub</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <img src="assets/Projects/Library_Management_System/images/Library_management_System_Dashboard.png"
-                            class="project-preview" alt="Library Management System dashboard">
+                            class="project-preview" alt="Library Management System Django dashboard for catalog, members, and borrowing workflows" loading="lazy" decoding="async">
                         <div class="card-body">
                             <span class="project-type">MANAGEMENT SYSTEM</span>
-                            <h5 class="card-title">Library Management System</h5>
+                            <h3 class="card-title h5">Library Management System</h3>
                             <p class="card-text">A web application for organizing library resources, members and
                                 borrowing workflows.</p>
                             <p class="tech-stack">Django • Bootstrap • PostgreSQL</p>
                             <div class="d-flex gap-2">
                                 <a href="https://library-management-system-nl78.onrender.com/" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">Live demo <i
+                                    rel="noopener noreferrer" aria-label="Open the Library Management System live demo" class="btn btn-outline-primary btn-sm">Live demo <i
                                         class="fas fa-arrow-up-right-from-square ms-1"></i></a>
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Library-Management-System"
-                                    target="_blank" rel="noopener noreferrer"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View the Library Management System GitHub repository"
                                     class="btn btn-outline-primary btn-sm">GitHub</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <div class="project-icon project-icon-fallback"><i class="fas fa-chart-line"></i></div>
                         <div class="card-body">
                             <span class="project-type">DATA APPLICATION</span>
-                            <h5 class="card-title">Stock Market Analyzer</h5>
+                            <h3 class="card-title h5">Stock Market Analyzer</h3>
                             <p class="card-text">A Django analytics tool using Yahoo Finance data, RSI, MACD,
                                 Bollinger Bands and Telegram trading alerts.</p>
                             <p class="tech-stack">Django • Yahoo Finance • Redis • Tailwind • Swagger</p>
                             <div class="d-flex gap-2">
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Stock_Market_Analyzer" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">View project <i
+                                    rel="noopener noreferrer" aria-label="View the Stock Market Analyzer GitHub project" class="btn btn-outline-primary btn-sm">View project <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <div class="project-icon project-icon-fallback"><i class="fas fa-calendar-check"></i></div>
                         <div class="card-body">
                             <span class="project-type">HR MANAGEMENT</span>
-                            <h5 class="card-title">Leave Management System</h5>
+                            <h3 class="card-title h5">Leave Management System</h3>
                             <p class="card-text">An employee leave workflow with applications, balances, history,
                                 profiles and administrator approval tools.</p>
                             <p class="tech-stack">Django 5 • PostgreSQL • Bootstrap • Crispy Forms</p>
                             <div class="d-flex gap-2">
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Leave-Management-System" target="_blank"
-                                    rel="noopener noreferrer" class="btn btn-outline-primary btn-sm">View project <i
+                                    rel="noopener noreferrer" aria-label="View the Leave Management System GitHub project" class="btn btn-outline-primary btn-sm">View project <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card project-card h-100">
+                    <article class="card project-card h-100">
                         <div class="project-icon project-icon-fallback"><i class="fas fa-cart-shopping"></i></div>
                         <div class="card-body">
                             <span class="project-type">E-COMMERCE PLATFORM</span>
-                            <h5 class="card-title">Single-Vendor E-Commerce</h5>
+                            <h3 class="card-title h5">Single-Vendor E-Commerce</h3>
                             <p class="card-text">A complete storefront with catalog filtering, persistent cart,
                                 checkout, SSLCommerz payments and Google login.</p>
                             <p class="tech-stack">Django • django-allauth • SSLCommerz • SQLite • Pillow</p>
                             <div class="d-flex gap-2">
                                 <a href="https://github.com/Fizur-Rahman-Fahim/Single-Vendor-Ecommerce-Project"
-                                    target="_blank" rel="noopener noreferrer"
+                                    target="_blank" rel="noopener noreferrer" aria-label="View the Single-Vendor E-Commerce GitHub project"
                                     class="btn btn-outline-primary btn-sm">View project <i
                                         class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="text-center mt-5" data-aos="fade-up">
                 <a href="https://github.com/Fizur-Rahman-Fahim?tab=repositories" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-primary">Explore all GitHub repositories <i
+                    rel="noopener noreferrer" aria-label="Explore all public GitHub repositories by Md. Fizur Rahman Fahim" class="btn btn-primary">Explore all GitHub repositories <i
                         class="fab fa-github ms-2"></i></a>
             </div>
         </div>
@@ -419,64 +468,64 @@
             <h2 class="text-center mb-5" data-aos="fade-up">Certifications & Courses</h2>
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/Ostad_Certificate_of_Completion.png"
-                            class="certificate-preview" alt="Ostad course completion certificate">
+                            class="certificate-preview" alt="Ostad full-stack development course completion certificate" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">Ostad Full Stack Course</h5>
+                            <h3 class="card-title h5">Ostad Full Stack Course</h3>
                             <p class="card-text">Certificate of completion for full-stack development training.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/Python_Beginner_in-depth.jpg"
-                            class="certificate-preview" alt="Python beginner certificate">
+                            class="certificate-preview" alt="Certificate for in-depth beginner Python programming training" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">Python Programming</h5>
+                            <h3 class="card-title h5">Python Programming</h3>
                             <p class="card-text">In-depth beginner-level Python training and practical fundamentals.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/Git_Github_Udemy.jpg"
-                            class="certificate-preview" alt="Git and GitHub certificate">
+                            class="certificate-preview" alt="Udemy certificate for Git and GitHub version control training" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">Git & GitHub</h5>
+                            <h3 class="card-title h5">Git & GitHub</h3>
                             <p class="card-text">Version control, collaboration workflows and GitHub fundamentals.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4" data-aos="fade-up">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/C_Proogramming_Hero.jpg"
-                            class="certificate-preview" alt="C programming certificate">
+                            class="certificate-preview" alt="Certificate for C programming fundamentals and problem solving" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">C Programming</h5>
+                            <h3 class="card-title h5">C Programming</h3>
                             <p class="card-text">Programming fundamentals, problem solving and C language concepts.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/C++programming_hero.jpg"
-                            class="certificate-preview" alt="C++ programming certificate">
+                            class="certificate-preview" alt="Certificate for C++ programming, object-oriented, and problem-solving training" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">C++ Programming</h5>
+                            <h3 class="card-title h5">C++ Programming</h3>
                             <p class="card-text">Object-oriented and competitive programming foundations in C++.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card h-100">
+                    <article class="card h-100">
                         <img src="assets/Certificates/Basic_SQL_Ganesh.jpg"
-                            class="certificate-preview" alt="Basic SQL certificate">
+                            class="certificate-preview" alt="Certificate for basic SQL querying and relational database fundamentals" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title">Basic SQL</h5>
+                            <h3 class="card-title h5">Basic SQL</h3>
                             <p class="card-text">Database querying, filtering, joins and relational data fundamentals.</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -496,7 +545,7 @@
                                 <li class="mb-3">Recognized through Khulna divisional association events and committee activities.</li>
                             </ul>
                             <img src="assets/Achivements/Programming_club_member_list.jpeg"
-                                class="achievement-preview" alt="Programming club member recognition">
+                                class="achievement-preview" alt="Programming club member list recognizing university community leadership" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -510,7 +559,7 @@
                                 <li class="mb-3">📢 Public speaker & crowd manager – JSTU University Day 2024</li>
                             </ul>
                             <img src="assets/Achivements/Khulna_divitional_association_news.jpeg"
-                                class="achievement-preview" alt="Community event recognition">
+                                class="achievement-preview" alt="News coverage recognizing Khulna divisional association event activities" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -523,7 +572,7 @@
                                 <li class="mb-3">University football goalkeeper and CSE Football Championship participant.</li>
                             </ul>
                             <img src="assets/Achivements/Khulna_divitional_association_committee.png"
-                                class="achievement-preview" alt="Association committee recognition">
+                                class="achievement-preview" alt="Khulna divisional association committee recognition and community achievement" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -550,7 +599,7 @@
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Open Email App <i
+                        <button type="submit" class="btn btn-primary" aria-label="Open your email app to send a portfolio enquiry">Open Email App <i
                                 class="fas fa-arrow-up-right-from-square ms-1"></i></button>
                     </form>
                 </div>
@@ -558,7 +607,7 @@
                     <div class="d-flex mb-4">
                         <i class="fas fa-envelope fa-2x text-primary me-3"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h3 class="h4">Email</h3>
                             <p>fizurrahman733433@gmail.com</p>
                         </div>
                     </div>
@@ -566,16 +615,16 @@
                         <i class="fab fa-github fa-2x text-primary me-3"></i>
                         <div>
                             <a href="https://github.com/Fizur-Rahman-Fahim" target="_blank"
-                                class="text-decoration-none">
-                                <h4 class="platform-name">GitHub</h4>
+                                rel="noopener noreferrer" aria-label="Visit Md. Fizur Rahman Fahim on GitHub" class="text-decoration-none">
+                                <h3 class="platform-name h4">GitHub</h3>
                             </a>
                         </div>
                     </div>
                     <div class="d-flex mb-4">
                         <i class="fab fa-instagram fa-2x text-primary me-3"></i>
                         <a href="https://www.instagram.com/fizurrahmanfahim?igsh=MXV2M2szZHRuando" target="_blank"
-                            class="text-decoration-none">
-                            <h4 class="platform-name">Instagram</h4>
+                            rel="noopener noreferrer" aria-label="Visit Md. Fizur Rahman Fahim on Instagram" class="text-decoration-none">
+                            <h3 class="platform-name h4">Instagram</h3>
                         </a>
 
                     </div>
@@ -583,6 +632,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white">
@@ -592,9 +642,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

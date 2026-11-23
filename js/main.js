@@ -42,6 +42,8 @@ const theme = localStorage.getItem('theme');
 if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.setAttribute('data-theme', 'dark');
     darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    darkModeToggle.setAttribute('aria-pressed', 'true');
+    darkModeToggle.setAttribute('aria-label', 'Switch to light mode');
 }
 
 // Toggle dark mode
@@ -56,6 +58,8 @@ darkModeToggle.addEventListener('click', () => {
     darkModeToggle.innerHTML = newTheme === 'dark' ?
         '<i class="fas fa-sun"></i>' :
         '<i class="fas fa-moon"></i>';
+    darkModeToggle.setAttribute('aria-pressed', newTheme === 'dark' ? 'true' : 'false');
+    darkModeToggle.setAttribute('aria-label', newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 });
 
 // Form validation and submission
